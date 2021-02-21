@@ -83,6 +83,8 @@ ul {
   align-items: center;
 }
 
+/* Site nav */
+
 .site-nav > .item:not(:last-child) {
   margin-right: 50px;
 }
@@ -95,12 +97,21 @@ ul {
 .site-nav-contacts {
   display: flex;
 }
+/* ===ICON=== */
+/* .site-nav-contacts .item .link::before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  background-image: url('../images/envelope.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: black;
+} */
 
 .site-nav-contacts > .item:not(:last-child) {
   margin-right: 50px;
 }
-
-/* Site nav */
 
 .site-nav .link,
 .site-nav-contacts .link,
@@ -193,7 +204,19 @@ ul {
   margin-left: -30px;
 }
 
-.feature > .item {
+.feature .list-item::before {
+  outline: 2px solid black;
+  display: block;
+  content: '';
+  height: 120px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f5f4fa;
+  background-image: url('../images/antenna\ 1.svg');
+}
+
+.feature > .list-item {
   flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
 }
