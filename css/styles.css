@@ -41,7 +41,7 @@ body {
 
 /* ====Контейнер==== */
 .container {
-  outline: 2px solid black;
+  /* outline: 2px solid black; */
   width: 1170px;
   margin: 0 auto;
   padding: 0 15px;
@@ -69,21 +69,21 @@ ul {
 }
 
 /* ===Header=== */
+.page-header {
+  border-bottom: 1px solid #ececec;
+}
 
 .page-header .container {
   display: flex;
   align-items: center;
   margin-bottom: 0;
   justify-content: space-between;
-  border-bottom: 1px solid #ececec;
 }
 
 .header-nav {
   display: flex;
   align-items: center;
 }
-
-/* Site nav */
 
 .site-nav > .item:not(:last-child) {
   margin-right: 50px;
@@ -97,21 +97,12 @@ ul {
 .site-nav-contacts {
   display: flex;
 }
-/* ===ICON=== */
-/* .site-nav-contacts .item .link::before {
-  content: '';
-  width: 20px;
-  height: 20px;
-  margin-right: 10px;
-  background-image: url('../images/envelope.svg');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-color: black;
-} */
 
 .site-nav-contacts > .item:not(:last-child) {
   margin-right: 50px;
 }
+
+/* Site nav */
 
 .site-nav .link,
 .site-nav-contacts .link,
@@ -136,6 +127,10 @@ ul {
 
 .site-nav .link.current {
   color: #2196f3;
+}
+
+.mailto-icon,
+.tel-icon {
 }
 
 /* hero */
@@ -193,8 +188,28 @@ ul {
 }
 
 /* Section  */
+
+/* ====Особенности==== */
+
 .section {
   padding-top: 94px;
+}
+
+.section-title.heading {
+  padding-top: 30px;
+}
+
+.container-icon {
+  display: block;
+  flex-wrap: wrap;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+}
+
+.svg-icon {
+  width: 70px;
+  margin: auto;
+  display: flex;
 }
 
 .feature {
@@ -204,19 +219,7 @@ ul {
   margin-left: -30px;
 }
 
-.feature .list-item::before {
-  outline: 2px solid black;
-  display: block;
-  content: '';
-  height: 120px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #f5f4fa;
-  background-image: url('../images/antenna\ 1.svg');
-}
-
-.feature > .list-item {
+.feature > .item {
   flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
 }
@@ -274,6 +277,10 @@ ul {
   padding-bottom: 10px;
 }
 
+.card-group .item {
+  background-color: #ffffff;
+}
+
 .card-group {
   display: flex;
   flex-wrap: wrap;
@@ -287,9 +294,12 @@ ul {
   margin-left: 30px;
 }
 
+.section-command {
+  background-color: #f5f4fa;
+}
+
 .section-command .container {
   padding-top: 94px;
-  background-color: #f5f4fa;
 }
 
 .section-command .text-group {
@@ -339,8 +349,8 @@ ul {
   margin-left: -30px;
   margin-top: -30px;
 
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+  /* box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16); */
 }
 
 .card-work > .item {
