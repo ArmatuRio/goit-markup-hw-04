@@ -348,23 +348,6 @@ ul {
   fill: #ffffff;
 }
 
-/* .social-links {
-  display: flex;
-  justify-content: space-evenly;
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-bottom: 30px;
-}
-.social-link-icon {
-  width: 44px;
-  height: 44px;
-}
-.social-icon {
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 20px;
-  height: 20px; */
-
 /* Портфолио */
 
 .btn {
@@ -451,11 +434,8 @@ ul {
 }
 
 .client-item {
-  width: 170px;
   height: 90px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 170px;
 }
 
 .client-item:not(:first-child) {
@@ -471,15 +451,6 @@ ul {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   fill: #afb1b8;
-  padding: 0;
-}
-
-.client-icon {
-  width: 44px;
-  height: 44px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .client-link:hover,
