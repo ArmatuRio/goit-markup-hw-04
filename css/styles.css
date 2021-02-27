@@ -349,12 +349,15 @@ ul {
 }
 
 /* Портфолио */
+.projects-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 .btn {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 94px;
   margin-bottom: 50px;
 }
 
@@ -377,6 +380,9 @@ ul {
 .btn-filter:focus {
   color: #ffffff;
   background-color: #2196f3;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 
 .card-work {
@@ -385,9 +391,6 @@ ul {
 
   margin-left: -30px;
   margin-top: -30px;
-
-  /* box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16); */
 }
 
 .card-work > .item {
@@ -396,8 +399,18 @@ ul {
   margin-top: 30px;
 }
 
+.card-work .item:hover,
+.card-work .item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .hero-btn {
   border: none;
+}
+
+.card-section {
+  padding: 20px 24px;
 }
 
 .section-work {
@@ -406,9 +419,6 @@ ul {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-
-  margin-top: 20px;
-  margin-bottom: 4px;
 }
 
 .work-text {
@@ -416,8 +426,6 @@ ul {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
-
-  margin-bottom: 20px;
 }
 
 /* ====Постоянные клиенты=== */
@@ -492,6 +500,10 @@ ul {
   align-items: baseline;
 }
 
+.social-icon-foot {
+  fill: #ffffff;
+}
+
 .social-link-icon-footer {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
@@ -540,7 +552,7 @@ ul {
   color: #ffffff;
 }
 
-.footer-contacts.link:hover,
-.footer-contacts.link:focus {
+.footer-contacts .link:hover,
+.footer-contacts .link:focus {
   color: #2196f3;
 }
